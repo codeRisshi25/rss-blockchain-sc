@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Doctor 1",
+    "address": "0x6bB6ad9d94433DA182f196603100C0B85d06907C",
+    "privateKey": "0x452b433837b3d96d5ad7820165781f5db71349a438395048013b07781192bd82"
+  },
+  {
+    "name": "Doctor 2",
+    "address": "0xb662F4083766D3B1eEACE96B3960fa09C9C12aA3",
+    "privateKey": "0xe38b9a3f447e11157610f8ca9b9386ee2416a619b937349be4c25c2bdcff3159"
+  },
+  {
+    "name": "Doctor 3",
+    "address": "0xA4CB0C8ceF499228B4f6427426d51C926355617D",
+    "privateKey": "0x9afae662803d9a60e0282987e1009efa467ac7c54e5c34207864054f9eb791a1"
+  },
+  {
+    "name": "Doctor 4",
+    "address": "0x0B811FA25cDb1FB7aD8b61a83F0B5f9BAB8562Ae",
+    "privateKey": "0x445d4b35c1c4c1455d6ce053fde351f16f1c682800a9202e69b33a83c55da34f"
+  },
+  {
+    "name": "Doctor 5",
+    "address": "0xc58Ad6065082Af7F1E75dC8E3f7B903b592Dcabc",
+    "privateKey": "0x81a61fc6474f9bae2ada18071c48682d1d49c4239a5b859352d15178e09ac44f"
+  }
+]
