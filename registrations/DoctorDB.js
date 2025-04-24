@@ -26,31 +26,32 @@ function hashCredentials(userId, password) {
 // Doctor blockchain data
 const doctorBlockchainData = [
     {
-        "name": "Rajesh Sharma",
-        "address": "0x6bB6ad9d94433DA182f196603100C0B85d06907C",
-        "privateKey": "0x452b433837b3d96d5ad7820165781f5db71349a438395048013b07781192bd82"
+      "name": "Dr. Aarav Sharma",
+      "address": "0x5510450bB7C42359AB433A08a2e69e5DA1A1BF2B",
+      "privateKey": "0x3174c9805e510c591676afdc429f7835c0fce1635223ed8b701cdc2e6d4b992c"
     },
     {
-        "name": "Priya Patel",
-        "address": "0xb662F4083766D3B1eEACE96B3960fa09C9C12aA3",
-        "privateKey": "0xe38b9a3f447e11157610f8ca9b9386ee2416a619b937349be4c25c2bdcff3159"
+      "name": "Dr. Ananya Gupta",
+      "address": "0x28152458Aa57793E36E889AA12A3235120b88006",
+      "privateKey": "0xa816139b385ff117a2ef6a64cf96c8870642842ea1a1d34c6118bbd1659d83db"
     },
     {
-        "name": "Amit Verma",
-        "address": "0xA4CB0C8ceF499228B4f6427426d51C926355617D",
-        "privateKey": "0x9afae662803d9a60e0282987e1009efa467ac7c54e5c34207864054f9eb791a1"
+      "name": "Dr. Vihaan Patel",
+      "address": "0x8235594c4CD6DB7026e228bb4ed95F05f6592d18",
+      "privateKey": "0x4acb1adca9f5bfc5faa5744c68ef57fa475477fc3cab6f31af524ea87e305310"
     },
     {
-        "name": "Sneha Gupta",
-        "address": "0x0B811FA25cDb1FB7aD8b61a83F0B5f9BAB8562Ae",
-        "privateKey": "0x445d4b35c1c4c1455d6ce053fde351f16f1c682800a9202e69b33a83c55da34f"
+      "name": "Dr. Siya Reddy",
+      "address": "0x68B7aDdF72F3653840A8A7761b1Da4fa8dBE282b",
+      "privateKey": "0x3adaf1b1e3d496697b85c964b737bd46748367085e55876bead1d20d1fcee2ba"
     },
     {
-        "name": "Vikram Singh",
-        "address": "0xc58Ad6065082Af7F1E75dC8E3f7B903b592Dcabc",
-        "privateKey": "0x81a61fc6474f9bae2ada18071c48682d1d49c4239a5b859352d15178e09ac44f"
+      "name": "Dr. Kabir Mehta",
+      "address": "0x99561260614dcA6AB61c8531152509c910aBb0fa",
+      "privateKey": "0x5a96cdfac83fca8ef5f2067653f1ce477742e371e953e2756af77d4d7c57d00e"
     }
 ];
+  
 
 // Generate mock data for doctors
 const generateDoctorData = (index, blockchainData) => {
@@ -107,7 +108,8 @@ const generateDoctorData = (index, blockchainData) => {
             walletAddress: blockchainData.address,
             // Note: Never store private keys in a database in a real application
             // This is just for your development environment
-            privateKey: blockchainData.privateKey
+            privateKey: blockchainData.privateKey,
+            patients : []
         }
     };
 };

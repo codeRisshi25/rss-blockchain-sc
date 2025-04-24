@@ -1,13 +1,16 @@
 const {Web3} = require('web3');
 const fs = require('fs');
+const path = require('path');
 const doctors = require('./Doctors.json');
+
 
 const web3 = new Web3('http://127.0.0.1:7545');
 
-const contractJson = JSON.parse(fs.readFileSync('../build/contracts/MedicalRecords.json', 'utf8'));
+const contractJsonPath = path.resolve(__dirname, '../build/contracts/MedicalRecords.json');
+const contractJson = JSON.parse(fs.readFileSync(contractJsonPath, 'utf8'));
 const contractABI = contractJson.abi;
 
-const contractAddress = '0x7F82834523D987067bf6317fE3c7Fa13641E3519'; // Replace with your contract address
+const contractAddress = '0xc905F4f692Cc64B3D10AD232B4f7891dab1c1618'; // Replace with your contract address
 
 async function registerDoctor() {
     const contract = new web3.eth.Contract(contractABI, contractAddress);
@@ -16,7 +19,7 @@ async function registerDoctor() {
             web3.eth.accounts.wallet.add(doc.privateKey);
 
             const receipt = await contract.methods
-                .registerWithTracking(1)
+                .registerWithTracking(2)
                 .send({
                     from: doc.address,
                     gas: 200000,
